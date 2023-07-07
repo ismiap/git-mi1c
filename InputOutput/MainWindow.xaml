@@ -48,7 +48,22 @@
             Margin="150,135,0,0" 
             TextWrapping="Wrap"
             x:Name="ClassTextBox" 
-            Text="{Binding name}"
+            Text="{Binding kelas}"
+            VerticalAlignment="Top" 
+            Width="120" 
+            RenderTransformOrigin="-0.158,0.503"/>
+        <TextBlock 
+            HorizontalAlignment="Left" 
+            Margin="51,150,0,0" 
+            TextWrapping="Wrap" 
+            Text="Semester               :" 
+            VerticalAlignment="Top"/>
+        <TextBox 
+            HorizontalAlignment="Left"
+            Margin="150,150,0,0" 
+            TextWrapping="Wrap"
+            x:Name="SemesterTextBox" 
+            Text="{Binding semester}"
             VerticalAlignment="Top" 
             Width="120" 
             RenderTransformOrigin="-0.158,0.503"/>

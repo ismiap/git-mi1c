@@ -23,6 +23,7 @@ namespace InputOutput
         public string name { get; set; }
         public string major { get; set; }
         public string myclass { get; set; }
+        public string semester { get; set; }
         public MainWindow()
         {
             InitializeComponent();
@@ -32,8 +33,9 @@ namespace InputOutput
             name = NameTextBox.Text;
             major = MajorTextBox.Text;
             myclass = ClassTextBox.Text;
+            semester = SemesterTextBox.Text;
 
-            MessageBox.Show($"Hello, Perkenalkan saya {name.ToString().ToUpper()} jurusan {major.ToString().ToUpper()} dari kelas {myclass.ToString().ToUpper()}");
+            MessageBox.Show($"Hello, Perkenalkan saya {name.ToString().ToUpper()} jurusan {major.ToString().ToUpper()} dari kelas {myclass.ToString().ToUpper()} semester {semester.ToString().ToUpper()}");
         }
     }
 }
